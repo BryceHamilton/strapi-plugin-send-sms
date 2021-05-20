@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/send",
+      "handler": "sms-plugin.send",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/schedule",
+      "handler": "sms-plugin.schedule",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
