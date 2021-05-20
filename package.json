@@ -1,11 +1,11 @@
 {
-  "name": "strapi-plugin-smsPlugin",
+  "name": "strapi-plugin-send-sms",
   "version": "0.0.0",
   "description": "This is the description of the plugin.",
   "strapi": {
-    "name": "smsPlugin",
+    "name": "send-sms",
     "icon": "plug",
-    "description": "Description of smsPlugin plugin."
+    "description": "Description of send-sms plugin."
   },
   "dependencies": {
     "@material-ui/core": "^4.11.4",
