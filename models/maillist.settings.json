@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mail_lists",
+  "info": {
+    "name": "MailList",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "mail_lists",
+      "dominant": true
+    }
+  }
+}
