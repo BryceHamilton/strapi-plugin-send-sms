@@ -13,12 +13,6 @@
   "attributes": {
     "Name": {
       "type": "string"
-    },
-    "users": {
-      "plugin": "users-permissions",
-      "collection": "user",
-      "via": "maillists",
-      "dominant": true
     }
   }
 }
