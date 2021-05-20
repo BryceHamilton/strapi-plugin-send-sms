@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "mail_lists",
+  "collectionName": "maillists",
   "info": {
-    "name": "MailList",
-    "description": ""
+    "name": "Maillist"
   },
   "options": {
     "increments": true,
@@ -12,13 +11,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "Name": {
       "type": "string"
     },
     "users": {
       "plugin": "users-permissions",
       "collection": "user",
-      "via": "mail_lists",
+      "via": "maillists",
       "dominant": true
     }
   }
