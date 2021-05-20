@@ -27,7 +27,7 @@ module.exports = {
   schedule: async (ctx) => {
     const { message, users, date } = ctx.request.body;
     console.log("sms-controller: ", { message, users, date });
-    await strapi.plugins["sms-plugin"].services["send-sms"].schedule({
+    await strapi.plugins["send-sms"].services["send-sms"].schedule({
       message,
       users,
       date,

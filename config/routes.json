@@ -3,7 +3,7 @@
     {
       "method": "POST",
       "path": "/send",
-      "handler": "sms-plugin.send",
+      "handler": "send-sms.send",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "POST",
       "path": "/schedule",
-      "handler": "sms-plugin.schedule",
+      "handler": "send-sms.schedule",
       "config": {
         "policies": []
       }
