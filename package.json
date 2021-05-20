@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-send-sms",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "This is the description of the plugin.",
   "strapi": {
     "name": "send-sms",

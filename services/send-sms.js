@@ -53,7 +53,7 @@ module.exports = {
     const timeToSend = new Date(date);
     timeToSend.setHours(timeToSend.getHours() + 4);
     const job = schedule.scheduleJob(timeToSend, async () => {
-      await strapi.plugins["sms-plugin"].services["send-sms"].send({
+      await strapi.plugins["send-sms"].services["send-sms"].send({
         message,
         users,
       });
