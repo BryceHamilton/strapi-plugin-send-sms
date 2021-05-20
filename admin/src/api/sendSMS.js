@@ -1,9 +1,9 @@
-const REACT_APP_API_URL = "http://localhost:1337";
+import pluginId from "../../pluginId";
 
 export const sendSMS = ({ message, users }, date) => {
   const endpoint = date ? "schedule" : "send";
   console.log("sending sms:", { message, users, date });
-  fetch(`${REACT_APP_API_URL}/send-sms/${endpoint}`, {
+  fetch(`/${pluginId}/send-sms/${endpoint}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
