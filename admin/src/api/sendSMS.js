@@ -1,4 +1,4 @@
-import pluginId from "../../pluginId";
+import pluginId from "../pluginId";
 
 export const sendSMS = ({ message, users }, date) => {
   const endpoint = date ? "schedule" : "send";
